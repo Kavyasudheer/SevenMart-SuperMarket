@@ -1,0 +1,146 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - list [ref=e4]:
+      - listitem [ref=e5]:
+        - link "" [ref=e6] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e7]: 
+    - list [ref=e8]:
+      - listitem [ref=e9]:
+        - link "User Image Admin" [ref=e10] [cursor=pointer]:
+          - /url: "#"
+          - img "User Image" [ref=e11]
+          - text: Admin
+        - text:  
+  - complementary [ref=e12]:
+    - link "AdminLTE Logo 7rmart supermarket" [ref=e13] [cursor=pointer]:
+      - /url: https://groceryapp.uniqassosiates.com/admin/home
+      - img "AdminLTE Logo" [ref=e14]
+      - text: 7rmart supermarket
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - img "User Image" [ref=e21]
+        - link "Admin" [ref=e23] [cursor=pointer]:
+          - /url: https://groceryapp.uniqassosiates.com/admin/home
+      - navigation [ref=e24]:
+        - menu [ref=e25]:
+          - listitem [ref=e26]:
+            - link " Dashboard " [ref=e27] [cursor=pointer]:
+              - /url: ""
+              - generic [ref=e28]: 
+              - paragraph [ref=e29]:
+                - text: Dashboard
+                - generic [ref=e30]: 
+            - text:                              
+          - listitem [ref=e31]:
+            - link "Manage Contact" [ref=e32] [cursor=pointer]:
+              - /url: https://groceryapp.uniqassosiates.com/admin/list-contact
+              - paragraph [ref=e33]: Manage Contact
+          - listitem [ref=e34]:
+            - link "Manage Gift cards &vouchers" [ref=e35] [cursor=pointer]:
+              - /url: https://groceryapp.uniqassosiates.com/admin/
+              - paragraph [ref=e36]: Manage Gift cards &vouchers
+          - listitem [ref=e37]:
+            - link " Admin Users " [ref=e38] [cursor=pointer]:
+              - /url: ""
+              - generic [ref=e39]: 
+              - paragraph [ref=e40]:
+                - text: Admin Users
+                - generic [ref=e41]: 
+            - text:                                                                   
+          - listitem [ref=e42]:
+            - link "ManagePayment" [ref=e43] [cursor=pointer]:
+              - /url: https://groceryapp.uniqassosiates.com/admin/
+              - paragraph [ref=e44]: ManagePayment
+          - listitem [ref=e45]:
+            - link "ManagePayment" [ref=e46] [cursor=pointer]:
+              - /url: https://groceryapp.uniqassosiates.com/admin/
+              - paragraph [ref=e47]: ManagePayment
+          - listitem [ref=e48]:
+            - link "ManagePayment" [ref=e49] [cursor=pointer]:
+              - /url: https://groceryapp.uniqassosiates.com/admin/
+              - paragraph [ref=e50]: ManagePayment
+          - listitem [ref=e51]:
+            - link "ManagePayment" [ref=e52] [cursor=pointer]:
+              - /url: https://groceryapp.uniqassosiates.com/admin/
+              - paragraph [ref=e53]: ManagePayment
+          - listitem [ref=e54]:
+            - link "ManagePayment" [ref=e55] [cursor=pointer]:
+              - /url: https://groceryapp.uniqassosiates.com/admin/
+              - paragraph [ref=e56]: ManagePayment
+          - listitem [ref=e57]:
+            - link "Manage Category" [ref=e58] [cursor=pointer]:
+              - /url: https://groceryapp.uniqassosiates.com/admin/list-category
+              - paragraph [ref=e59]: Manage Category
+          - listitem [ref=e60]:
+            - link "Manage Product12" [ref=e61] [cursor=pointer]:
+              - /url: https://groceryapp.uniqassosiates.com/admin/list-product
+              - paragraph [ref=e62]: Manage Product12
+          - listitem [ref=e63]:
+            - link "Manage Footer Text" [ref=e64] [cursor=pointer]:
+              - /url: https://groceryapp.uniqassosiates.com/admin/list-footertext
+              - paragraph [ref=e65]: Manage Footer Text
+          - listitem [ref=e66]:
+            - link "Manage News" [ref=e67] [cursor=pointer]:
+              - /url: https://groceryapp.uniqassosiates.com/admin/list-news
+              - paragraph [ref=e68]: Manage News
+          - listitem [ref=e69]:
+            - link "Manage Product12" [ref=e70] [cursor=pointer]:
+              - /url: https://groceryapp.uniqassosiates.com/admin/list-product
+              - paragraph [ref=e71]: Manage Product12
+          - listitem [ref=e72]:
+            - link "kkloo" [ref=e73] [cursor=pointer]:
+              - /url: https://groceryapp.uniqassosiates.com/admin/
+              - paragraph [ref=e74]: kkloo
+          - listitem [ref=e75]:
+            - link " Settings " [ref=e76] [cursor=pointer]:
+              - /url: ""
+              - generic [ref=e77]: 
+              - paragraph [ref=e78]:
+                - text: Settings
+                - generic [ref=e79]: 
+            - text:   
+  - generic [ref=e80]:
+    - generic [ref=e83]:
+      - heading "Contact Us" [level=1] [ref=e85]
+      - list [ref=e87]:
+        - listitem [ref=e88]:
+          - link "Home" [ref=e89] [cursor=pointer]:
+            - /url: https://groceryapp.uniqassosiates.com/admin/home
+        - listitem [ref=e90]: / Contact Us
+    - generic [ref=e94]:
+      - heading "Contact Us" [level=4] [ref=e96]
+      - table [ref=e98]:
+        - rowgroup [ref=e99]:
+          - row "Phone Email Address Delivery_time Delivery Charge Limit Action" [ref=e100]:
+            - cell "Phone" [ref=e101]
+            - cell "Email" [ref=e102]
+            - cell "Address" [ref=e103]
+            - cell "Delivery_time" [ref=e104]
+            - cell "Delivery Charge Limit" [ref=e105]
+            - cell "Action" [ref=e106]
+        - rowgroup [ref=e107]:
+          - row "98765432210 asfa@gmail.com azams home 21 200 " [ref=e108]:
+            - cell "98765432210" [ref=e109]
+            - cell "asfa@gmail.com" [ref=e110]
+            - cell "azams home" [ref=e111]
+            - cell "21" [ref=e112]
+            - cell "200" [ref=e113]
+            - cell "" [ref=e114]:
+              - button "" [ref=e115] [cursor=pointer]:
+                - generic [ref=e116]: 
+  - contentinfo [ref=e117]:
+    - strong [ref=e118]:
+      - text: Copyright © 2025
+      - link "7rmart supermarket" [ref=e119] [cursor=pointer]:
+        - /url: https://groceryapp.uniqassosiates.comhome
+      - text: .
+    - text: All rights reserved.
+    - generic [ref=e120]:
+      - text: Design & Developed by
+      - link:
+        - /url: ""
+```
