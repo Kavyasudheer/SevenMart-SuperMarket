@@ -18,6 +18,7 @@ test("Verify Login Logo", async () => {
   await expect(loginPage.$logoButton).toBeVisible();
   expect(await loginPage.logoText()).toContain("7rmart supermarket");
   await expect(loginPage.$inputField("remember_me")).toBeChecked();
+  console.log("Admin")
 });
 
 test("Verify Login Functionality", async () => {
