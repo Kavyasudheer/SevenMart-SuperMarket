@@ -39,6 +39,7 @@ test(" regression Admin Users Count Verification", async () => {
 
 test("regression Manage Contact Count Verification", async () => {
   await loginPage.launchUrl();
+  console.log("print")
   await expect(homePage.$manageContactNumber).toBeVisible();
   expect(await homePage.getManageContactNumbers()).not.toBeNull();
   expect(await homePage.getManageContactNumbers()).toBeGreaterThanOrEqual(1);
