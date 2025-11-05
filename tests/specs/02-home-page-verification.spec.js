@@ -9,27 +9,36 @@ test.beforeAll(async ({ browser }) => {
   page = await context.newPage();
   loginPage = new LoginPage(page);
   homePage = new HomePage(page);
-});
-
-test.beforeEach(async () => {
   await loginPage.launchUrl();
   await loginPage.login(credentials.userName, credentials.password);
+  await context.storageState({ path: "state.json" });
+});
+
+test.beforeEach(async ({ browser }) => {
+  context = await browser.newContext({ storageState: "state.json" });
+  page = await context.newPage();
+  loginPage = new LoginPage(page);
+  homePage = new HomePage(page);
+  
 });
 
 test("HomePage Verification", async () => {
+  await loginPage.launchUrl();
   expect(await homePage.getProfileName()).toContain("Admin");
   await expect(homePage.$profileName).toBeVisible();
   await expect(homePage.$logo("AdminLTE Logo")).toBeVisible();
   expect(await homePage.adminlogo()).toContain("7rmart supermarket");
 });
 
-test("Admin Users Count Verification", async () => {
+test(" regression Admin Users Count Verification", async () => {
+  await loginPage.launchUrl();
   await expect(homePage.$adminUserNumber).toBeVisible();
   expect(await homePage.getAdminNumbers()).not.toBeNull();
   expect(await homePage.getAdminNumbers()).toBeGreaterThanOrEqual(11000);
 });
 
-test("Manage Contact Count Verification", async () => {
+test("regression Manage Contact Count Verification", async () => {
+  await loginPage.launchUrl();
   await expect(homePage.$manageContactNumber).toBeVisible();
   expect(await homePage.getManageContactNumbers()).not.toBeNull();
   expect(await homePage.getManageContactNumbers()).toBeGreaterThanOrEqual(1);

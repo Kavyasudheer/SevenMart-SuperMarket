@@ -4,9 +4,9 @@
   "main": "index.js",
   "scripts": {
     "smoke": "npx playwright test tests/specs/02-home-page-verification.spec.js",
-  
-    "allure-generate":"npx allure generate ./allure-results --clean",
-    "allure-view-report":"npx allure open ./allure-report"
+    "allure-generate": "npx allure generate ./allure-results --clean",
+    "allure-view-report": "npx allure open ./allure-report",
+    "feature": "npx playwright test --grep regression"
   },
   "keywords": [],
   "author": "",
