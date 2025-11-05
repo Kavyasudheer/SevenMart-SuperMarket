@@ -18,9 +18,20 @@ test.beforeEach(async () => {
   await loginPage.launchUrl();
   await loginPage.login(credentials.userName, credentials.password);
 });
-test.only("Create User Verification", async () => {
+test("Create User Verification", async () => {
   let userName = `${createuser.userName} ${randomLetters(6)}`;
   await adminPage.createUser(userName, createuser.password, createuser.userType);
   await expect(adminPage.$tdata(userName)).toContainText(userName);
   await expect(adminPage.$successalert).toBeVisible();
+  await expect(adminPage.$userStatus).toContainText('Active');
+  //await adminPage.deleteUser()
+  // await adminPage.deleteUser()
+  // await expect(adminPage.$deleteAlert).toContainText('User Deleted Successfully');
+  
+});
+
+test("Delete User Verification", async () => {
+
+await adminPage.deleteUser()
+await expect(adminPage.$deleteAlert).toContainText('User Deleted Successfully');
 });
