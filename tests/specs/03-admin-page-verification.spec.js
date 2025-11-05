@@ -24,9 +24,9 @@ test("Create User Verification", async () => {
   await expect(adminPage.$tdata(userName)).toContainText(userName);
   await expect(adminPage.$successalert).toBeVisible();
   await expect(adminPage.$userStatus).toContainText('Active');
-  //await adminPage.deleteUser()
-  // await adminPage.deleteUser()
-  // await expect(adminPage.$deleteAlert).toContainText('User Deleted Successfully');
+  await adminPage.deleteUser()
+  await adminPage.deleteUser()
+  await expect(adminPage.$deleteAlert).toContainText('User Deleted Successfully');
   
 });
 
